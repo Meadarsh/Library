@@ -29,7 +29,7 @@
 # Note:: There is only piece of book available so if someone loggedin and borrow all books then you are not able to borrow
 #### Admin Access 
 username - Adarsh
-passwors - 1234
+password - 1234
 
 
 
