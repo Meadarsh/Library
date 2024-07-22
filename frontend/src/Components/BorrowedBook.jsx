@@ -5,6 +5,7 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import { X } from "lucide-react";
 import React, { useEffect, useState } from "react";
 
 const BorrowedBook = ({ toggleDrawer, open }) => {
@@ -59,7 +60,9 @@ const BorrowedBook = ({ toggleDrawer, open }) => {
   };
   return (
     <Drawer anchor="right" open={open} onClose={toggleDrawer}>
-      <Box sx={{ p: 1, width: { xs: "100%", lg: "30vw" } }}>
+      <Box sx={{position:'relative', p: 1, width: { xs: "100%", lg: "30vw" } }}>
+      <Button onClick={toggleDrawer} sx={{position:'absolute',top:5,right:3}}><X/></Button>
+
         <Typography sx={{ fontWeight: 700, fontSize: 30 }}>
           Books you have
         </Typography>

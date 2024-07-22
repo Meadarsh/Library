@@ -11,7 +11,7 @@ const Shop = ({ data, refresh, admin }) => {
       alignItems={"center"}
       p={{ xs: 3, lg: 5 }}
     >
-      <Box sx={{ bgcolor: "black", p: { xs: "2px", lg: "10px 30px" } }}>
+      <Box sx={{ bgcolor: "black", p: { xs: "5px 10px", lg: "10px 30px" } }}>
         <Typography sx={{ fontWeight: 600, color: "white", fontSize: 20 }}>
           Books
         </Typography>

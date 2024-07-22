@@ -16,7 +16,6 @@ const BookCard = ({ _, refresh, admin }) => {
   const [editBook, setEditBook] = useState(false);
   const [bookIdToDelete, setBookIdtoDelete] = useState(false);
   const Borrow = async () => {
-    console.log(import.meta.env.URL);
     setLoading(true);
     try {
       const responce = await fetch(

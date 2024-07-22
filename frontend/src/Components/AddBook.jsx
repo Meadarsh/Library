@@ -1,4 +1,5 @@
 import { Box, Button, Drawer, TextField, Typography } from "@mui/material";
+import { X } from "lucide-react";
 import React from "react";
 
 const AddBook = ({ toggleDrawer,refresh, data = false, open }) => {
@@ -69,7 +70,8 @@ const AddBook = ({ toggleDrawer,refresh, data = false, open }) => {
 
   return (
     <Drawer anchor="right" open={open} onClose={toggleDrawer}>
-      <Box sx={{ p: 2, width: { xs: "100%", lg: "25vw" } }}>
+      <Box sx={{position:'relative', p: 2, width: { xs: "100%", lg: "25vw" } }}>
+        <Button onClick={toggleDrawer} sx={{position:'absolute',top:5,right:3}}><X/></Button>
         <Typography sx={{ fontWeight: 700, fontSize: 30 }}>
          {data?'Update Book':'Add new book'}
         </Typography>
